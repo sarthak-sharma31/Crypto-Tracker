@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Parkinsans", serif;
+}
+
+body {
+  background-color: #131313;
+  color: white;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+}
+
+#search {
+  border-radius: 20px;
+  right: 0;
+  border: none;
+  padding: 10px;
+  margin: auto 2rem auto auto;
+  width: 30vw;
+}
+
+
+.pairs {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: large;
+  font-weight: bolder;
+  margin: 5px auto;
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+
+.info {
+  padding: 1rem 0px 0px 1rem;
+}
+
+.tag {
+  font-size: large;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.tag span {
+  font-weight: lighter;
+}
+
+.price-up {
+  color: green;
+}
+
+.price-down {
+  color: red;
+}
+
+.percent-up {
+  color: green;
+}
+
+.percent-down {
+  color: red;
+}
+
+.percent-neutral {
+  color: grey;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Crypto Tracker</h1>
+    <input type="text" id="search" placeholder="Search..." autocomplete="off">
+  </nav>
+
+  <div class="container">
+    <div class="info">
+      <p class="tag">Pair: <span id="pair-name">BTC/USDT</span></p>
+      <p class="tag">Price: <span id="pair-price" class="price-up">100000</span></p>
+      <p class="tag">Volume: <span id="pair-Volume">100000</span></p>
+      <p class="tag">Percent Change: <span id="pair-percent" class="percent-neutral">0%</span></p>
+    </div>
+    <div class="pairs">
+      <% cryptos.forEach(crypto=> { %>
+        <div class="card" id="<%= crypto.name %>">
+          <p class="name">
+            <%= crypto.name %>t
+          <p class="price price-up">
+            <%= crypto.price %>
+          </p>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
